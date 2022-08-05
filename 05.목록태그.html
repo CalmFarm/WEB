@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.목록태그</title>
+</head>
+<body>
+    <h1>목록 태그 : ol,ul 태그</h1>
+    <!-- ol [oredered list] : 순서있는 목록
+         ul [unordered list] : 순서없는 목록
+         => block 요소
+         속성 : type 1(디폴트) , A , a, I ,i
+                start : 시작값을 지정 -->
+    
+    <h2>ol 태그</h2>
+    <ol type="I" start="3">
+        <li>Java</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ol>
+    <hr color="red">
+    <ul type="square">
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Arduino</li>
+        <li>Python</li>
+    </ul>
+    <hr color="red">
+    <h2>DL > DT + DD</h2>
+    <p>
+        DL태그는 용어를 정의하는 영역을 정할 때 사용한다 <br>
+        용어 제목은 DT로, 용어에 대한 설명은 DD 를 이용한다. 
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+
+            <dt>JDBC</dt>
+            <dd>Java Database Connectivity</dd>
+        </dl>
+    </p>
+</body>
+</html>

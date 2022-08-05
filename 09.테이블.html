@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09.테이블</title>
+</head>
+<body>
+    <h1>테이블 태그 (3행2열)</h1>
+    <!-- tr : 행 태그 table row
+         td : 행 데이터 table date
+    -->
+
+    <!-- 테이블 설정 -->
+    <table border="1" bordercolor="red" bgcolor="yellow" cellspacing="30"
+    cellpadding="20" align="center" width="400px" height="300px" style="color:aqua"> 
+        <!-- 1행 -->
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+        </tr>
+        <!-- 2행 -->
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+        </tr>
+        <!-- 3행 -->
+        <tr>
+            <td>3행1열</td>
+            <td>3행2열</td>
+        </tr>
+        <hr color="red">
+        <!-- 3행 4열 -->
+        <table border="1" width="80%" height="200px" align="center">
+            <thead>
+                <tr bgcolor="pink">
+                    <th width="5%"> 번호</th>
+                    <th width="15%">이름</th>
+                    <th width="20%">연락처</th>
+                    <th width="40%">이메일</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>1</td>
+                    <td>홍길동</td>
+                    <td>010-1111-2222</td>
+                    <td style="color:yellowgreen">HGD@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>김철수</td>
+                    <td>010-3333-4444</td>
+                    <td style="color:salmon">KCS@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>이영희</td>
+                    <td>010-5555-6666</td>
+                    <td>LYH@gmail.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <caption><h1 style="color:blueviolet">회원 주소록</h1></caption>
+            </tfoot>
+        </table>
+    </table>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22.선택자</title>
+    <style type="text/css">
+        /*태그 선택자*/
+        div{
+            color: darkcyan;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18pt;
+        }
+        /*클래스 선택자 : 앞에 마침표 . 를 붙인다.
+            .클래스명{속성명:값...}
+            class가 c1인 요소를 선택해서
+        */
+        .c1{
+            color: lightgreen;
+            padding: 1em; /* 바깥여백 패딩 1em = 대략 16px*/
+            margin: 1.2em; /* 안쪽여백 마진*/
+            background-color: darkblue;
+        }
+        .c2{
+            border: thick green dashed;
+        }
+        #dv1{
+            background-color: darkcyan;
+            color: lightgoldenrodyellow;
+            font-size: 1.5em;
+        }
+        #dv2{
+            color: cadetblue;
+            font-weight: bold;
+        }
+        /*우선순위 : 아이디선택자>클래스선택자>태그선택자*/
+        a{
+            font-style: italic;
+            color: springgreen;
+            text-decoration: none;
+        }
+        div a{
+            background-color: navy;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!--id (identity) : 한 페이지 내에서 unique한 값을 가져야한다. 
+        class :한 페이지 내에서 동일한 이름의 클래스가 여러개 나와도 된다.
+    -->
+    <h1>ID 선택자(selector),class 선택자,태그 선택자</h1>
+
+    <div id="dv1">div1 #dv1</div>
+    <div id="dv2" class="c1">div2.c1 #dv2</div>
+    <div class="c1 c2">div3.c1 c2</div>
+    <div class="c2">div4.c2</div>
+    <div id="dv5">div5 #dv5</div>
+
+    <hr color="blue" >
+
+    이것은 <a href="http://www.youtube.com">단순링크</a>
+    <br>
+
+    <div>
+        div 태그안에서 <h2><a href="21.인라인스타일정의.html">CSS3.0 예제</a>에 링크를 겁니다.</h2>
+    </div>
+</body>
+</html>
