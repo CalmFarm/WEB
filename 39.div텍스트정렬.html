@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39.div텍스트정렬</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+        }
+        #mydiv{
+            text-align: center;
+            /* line-height: 300px; */
+            vertical-align: middle;/*테이블 태그 내의 셀(td)에서는 적영되나 div에서는 안된다*/
+            border: 10px dashed darkblue;
+        }
+        #mytab{
+            border: 3px solid tomato;
+            margin-top: 1em;
+            display: table;
+        }
+        #mycell{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #mytab2{
+            background-color: lightcoral;
+            margin-top: 1em;
+            border: 1px solid darkgoldenrod;
+            display: none;
+            /*안보임. 영역도 사라짐 none*/
+        }
+        #mydiv2{
+            background-color: lightseagreen;
+            visibility:hidden;
+            /*안보임. 영억은 그대로 남아있음*/
+        }
+        #mydiv{
+            opacity: 0;/*투명도 : 0(투명) ,1(불투명)*/
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv" class="">
+        가나다라마바사
+    </div>
+
+    <div id="mydiv2" class="">
+        가나다라마바사
+    </div>
+
+    <div id="mytab" class="">
+        <div id="mycell">
+            자차카타파하
+        </div>
+     </div>
+    
+    <div id="mytab2" class="">
+        <div id="mycell2">
+            자차카타파하
+        </div>
+    </div>
+
+    
+
+    <h1 onclick="show()">안녕하세요</h1>
+    <h1 onclick="showin()">Hello</h1>
+      <script>
+        function show(){
+            var obj=document.getElementById('mytab2');
+            //alert(obj)
+            obj.style.display='block';
+            //display none이었던 것이 block요소로 바뀌면서
+            //다시 등장함
+            var obj3=document.getElementById('mydiv');
+            obj3.style.opacity='1';
+        }
+        function showin(){
+            var obj2=document.getElementById('mydiv2');
+            obj2.style.visibility='visible';
+        }
+      </script>
+</body>
+</html>

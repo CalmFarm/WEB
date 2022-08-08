@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35.포지션_relative</title>
+    <style>
+        span,div{
+            background-color: darkseagreen;
+        }
+        .top{
+            position:relative;
+            top: 15px;
+            z-index: 1;
+        }
+        .right{
+            position: relative;
+            right: 10px;
+            z-index: 2;
+        }
+        .bottom{
+            position: relative;
+            bottom: 10px;
+            z-index: 3;
+        }
+        .left{
+            position: relative;
+            left: 15px;
+            z-index: 4;
+        }
+    </style>
+</head>
+<body>
+    <span class="top">span1</span>
+    <span class="right">span2</span>
+    <span class="bottom">span3</span>
+    <div class="left">div1</div>
+    <!-- static(디폴트) -->
+    <h1>position-static,[relative],absolute,fixed</h1>
+</body>
+</html>
